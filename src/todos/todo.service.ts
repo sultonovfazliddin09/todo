@@ -1,12 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { UpdateTodoDto } from './dto/update-todo.dto';
 import { CreateTodoDto } from './dto/create-todo.dto';
-
-interface Todo {
-  id: number;
-  title: string;
-  completed: boolean;
-}
+import { Todo } from 'src/todos/type';
 
 @Injectable()
 export class TodosService {
